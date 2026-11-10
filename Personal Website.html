@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious Portfolio & Academic Management</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="popupAlert" class="popup-alert">
+        <span>✨</span>
+        <span id="popupAlertText">Success! Your message has been sent.</span>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links" id="nav-links">
+                <button class="menu-close-btn" id="close-menu" aria-label="Close navigation">&times;</button>
+                <li><a onclick="switchPage('home')" class="nav-item active" data-target="home">Home</a></li>
+                <li><a onclick="switchPage('about')" class="nav-item" data-target="about">About Me</a></li>
+                <li><a onclick="switchPage('projects')" class="nav-item" data-target="projects">My Projects</a></li>
+                <li><a onclick="switchPage('planner')" class="nav-item" data-target="planner">Academic Planner</a></li>
+                <li><a onclick="switchPage('contact')" class="nav-item" data-target="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="home" class="page-section active-page">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p class="subtitle">Hi there! Welcome to my Portfolio. Feel free to check about me.</p>
+                    <button class="btn" onclick="switchPage('projects')">View My Work</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://lh3.googleusercontent.com/d/12rjsBGXILybfCLTcRDXJ0EEKgeNX2Klq" alt="Profile Image">
+                </div>
+            </div>
+            
+            <div class="bio-section">
+                <h2>Biography</h2>
+                <p class="justify-text">My name is Precious and I am a student of MIVA Open University currently studying Computer Science as a course. Here you can explore my background, view my previous project. I also have my day-to-day task through an interactive planner, and you can also get in touch with me using the contact.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT ME PAGE -->
+        <section id="about" class="page-section">
+            <h1>About Me</h1>
+            <p class="section-desc">Explore my background, career goals, and skill sets.</p>
+            
+            <div class="about-container">
+                <div class="about-card">
+                    <h3>🎓 Educational Background</h3>
+                    <p>Currently pursuing my degree at MIVA Open University, focusing on core computer science concepts, modern web technologies, and software engineering principles.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>🚀 Career Aspirations</h3>
+                    <p>My journey of website development started early in 2019 at GlobalTech. Aiming to become a Full-Stack Web Developer building scalable, user-centric web applications and contributing to innovative tech solutions globally.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>💻 Technical Skills</h3>
+                    <p>Equipped with hands-on foundational and intermediate tools for modern web development:</p>
+                    <ul>
+                        <li>HTML5 & Semantic Markup</li>
+                        <li>CSS3 (Flexbox, Grid, Responsive Design, Glassmorphism)</li>
+                        <li>JavaScript (DOM Manipulation, ES6+, Asynchronous Programming)</li>
+                        <li>Git & GitHub Version Control</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h3>🎨 Hobbies & Interests</h3>
+                    <p>Outside of writing clean code, I enjoy continuous learning and creative problem-solving:</p>
+                    <ul>
+                        <li>Participating in open-source coding challenges</li>
+                        <li>Exploring UI/UX design trends and modern aesthetics</li>
+                        <li>Reading tech blogs and industry case studies</li>
+                        <li>Playing strategy and logic-based puzzle games</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS PAGE -->
+        <section id="projects" class="page-section">
+            <h1>My Projects</h1>
+            <p class="section-desc">Scroll down to explore the real-world web applications I have designed and built.</p>
+
+            <div class="projects-container">
+                <div class="project-row-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Lbz3_htIQWXsSV1Kse79UTopcNUfksh6lG_5EM16sQ&s=10" alt="E-Commerce Store" class="project-row-img">
+                    <div class="project-row-info">
+                        <h3>🛒 ShopEase E-Commerce Store</h3>
+                        <p>A fully responsive product storefront engineered with HTML5, CSS Grid, and vanilla JavaScript filtering logic. Built to deliver a seamless shopping experience with fluid layout scaling and fast-loading catalog views across all mobile and desktop viewports.</p>
+                        <a href="#" class="btn-small" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-row-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRh-6Vih2_QiKejfXziBqXEOsoqhEYiuIbsT8g5nlR_g&s=10" alt="Calculators and Unit Converters" class="project-row-img">
+                    <div class="project-row-info">
+                        <h3>📐 OmniCalc Utility Suite</h3>
+                        <p>A multi-functional web utility application featuring a dynamic Body Mass Index (BMI) calculator and real-time currency conversion tools. Designed with clean input validation and mathematical algorithms to deliver instant, accurate computations.</p>
+                        <a href="#" class="btn-small" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-row-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoMvFbe6_znu4CBmRRRjBd93KXT2QBlsV3U6gsIbHiYA&s=10" alt="To-do List" class="project-row-img">
+                    <div class="project-row-info">
+                        <h3>📋 EduTrack Academic Task Manager</h3>
+                        <p>A productivity-focused web task manager built to help students organize daily assignments and track hard deadlines. Features real-time countdown warning badges, item completion toggles, and persistent local storage synchronization.</p>
+                        <a onclick="switchPage('planner')" class="btn-small" style="cursor: pointer;">View Live App</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- ACADEMIC PLANNER PAGE -->
+        <section id="planner" class="page-section">
+            <h1>Academic Planner</h1>
+            <p class="section-desc">Manage your school tasks, add assignments with dates & times, check them off, or delete items.</p>
+
+            <div class="planner-container">
+                <div class="task-input-group">
+                    <input type="text" id="taskInput" placeholder="Enter a new task or assignment...">
+                    <input type="datetime-local" id="taskDateTime">
+                    <button id="addTaskBtn" class="btn">Add Task</button>
+                </div>
+                <ul id="taskList" class="task-list"></ul>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact" class="page-section">
+            <h1>Get In Touch</h1>
+            <p class="section-desc">Fill out the form below to send me a message.</p>
+
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <small class="error-msg" id="nameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" placeholder="name@example.com">
+                        <small class="error-msg" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" placeholder="+234 801 234 5678">
+                        <small class="error-msg" id="phoneError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message here..."></textarea>
+                        <small class="error-msg" id="messageError"></small>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="liquid-glass-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MIVA Open University Student Portfolio. All Rights Reserved.</p>
+    </footer>
+
+   <script src="index.js"></script>
+</body>
+</html>
